@@ -1,0 +1,66 @@
+/* 
+**********************
+        RESET
+**********************
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* 
+**********************
+        DEBUG
+**********************
+*/
+
+.bordered{
+    border: 1px dashed black;
+    min-height: 50px;
+}
+
+/* 
+**********************
+        LAYOUT
+**********************
+*/
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 0 1rem;
+
+}
+
+/* 
+**********************
+        HEADER
+**********************
+*/
+
+#header{
+    background-color: #0084FD;
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+#header > .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list{
+    display: flex;
+}
