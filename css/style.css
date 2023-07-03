@@ -25,14 +25,6 @@ img{
     min-height: 50px;
 }
 
-.card-section{
-    line-height: 80px;
-}
-
-.box-content{
-    line-height: 80px;
-}
-
 /* 
 **********************
         LAYOUT
@@ -134,15 +126,66 @@ section:nth-child(even){
 */
 
 #intro{
-    padding-top: 80px;
+    padding-top: 90px;
 }
 
 #intro .card{
-    background-color: red;
+    background-color: #B5DDFF;
+    border-radius: 50px;
     color: white;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     height: 100%;
     text-align: center;
+}
+
+#intro h3{
+    color: #0084FD;
+}
+
+#intro p{
+    color: black;
+}
+
+#intro .card-section >*{
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+#intro button{
+    border-radius: 50px;
+    font-size: 1.1rem;
+    padding: 5px 35px;
+    background-color: #0084FD;
+    border: 1px solid transparent;
+    color: white;
+}
+
+ .card-section .phone{
+    max-width: 60%;
+    display: block;
+}
+
+.img-phone{
+    display: flex;
+    justify-content: center;
+}
+
+.box-content{
+    line-height: 25px;
+}
+
+.box-content > i{
+    color: #0084FD;
+    font-size: 4rem;
+}
+
+.box-content > h3{
+    margin: 15px 0;
+}
+
+.card .box-content:last-child{
+    padding: 30px 50px;
+    color: black;
 }
 
 /* 
@@ -195,7 +238,7 @@ section:nth-child(even){
 **********************
 */
 
-.col > *{
+ #about-us .col > *{
     margin-bottom: 20px;
 }
 
@@ -258,12 +301,33 @@ section:nth-child(even){
     #intro .col:first-child .card{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     #intro .card > .card-section{
         width: 50%;
     }
 
+    .box-content i{
+        margin-top: 20px;
+    }
+
+    .card .box-content:last-child{
+        padding: 0;
+        margin-bottom: 25px;
+    }
+
+    #intro button {
+        font-size: 1rem;
+      }
+
+      .card-section .phone {
+        max-width: 250px;
+      }
+
+      .card-section h3 {
+        font-size: 1.5rem;
+      }
     /* STRATEGIC */
 
     /* TESTIMONIAL */
@@ -317,6 +381,9 @@ section:nth-child(even){
 /* ? Desktop */
 
 @media  screen and (min-width:992px){
+    body{
+        overflow-x: hidden;
+    }
     /* HEADER */
     #header .icon{
         display: none;
@@ -337,10 +404,11 @@ section:nth-child(even){
 
     #intro .col:first-child .card{
         flex-direction: row;
+        align-items: flex-start;
     }
 
     /* STRATEGIC */
-    #strategic .row{
+        #strategic .row{
         display: flex;
     }
 
