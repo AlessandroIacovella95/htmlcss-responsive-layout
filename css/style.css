@@ -170,6 +170,39 @@ section:nth-child(even){
 
 /* 
 **********************
+      STARTED
+**********************
+*/
+
+#started > .container{
+    text-align: center;
+}
+
+#started .container > *{
+    margin: 10px 0;
+}
+
+/* 
+**********************
+      FOOTER
+**********************
+*/
+
+#footer{
+    background-color: #333333;
+}
+
+#footer .container {
+    color: white;
+    text-align: center;
+}
+
+#footer .container p{
+    padding: 30px 0;
+}
+
+/* 
+**********************
       RESPONSIVE
 **********************
 */
@@ -236,6 +269,18 @@ section:nth-child(even){
         width: 50%;
     }
 
+    /* STARTED */
+    #started .container p{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /* FOOTER */
+    #footer .container {
+        max-width: 400px;
+    }
+
+}
 
 
 /* ? Desktop */
@@ -283,4 +328,14 @@ section:nth-child(even){
         width: 35%;
     }
 
+    /* STARTED */
+    #started .container p{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    /* FOOTER */
+    #footer .container {
+        max-width: 450px;
+    }
 }
