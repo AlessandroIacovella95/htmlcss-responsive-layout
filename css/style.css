@@ -160,6 +160,16 @@ section:nth-child(even){
 
 /* 
 **********************
+      ABOUT US
+**********************
+*/
+
+.col > *{
+    margin-bottom: 20px;
+}
+
+/* 
+**********************
       RESPONSIVE
 **********************
 */
@@ -217,7 +227,16 @@ section:nth-child(even){
         flex-wrap: wrap;
     }
     
-}
+    /* ABOUT US */
+    #about-us .row{
+        display: flex;
+    }
+
+    #about-us .col{
+        width: 50%;
+    }
+
+
 
 /* ? Desktop */
 
@@ -254,4 +273,14 @@ section:nth-child(even){
         display: flex;
         flex-wrap: wrap;
     }
+
+    /* ABOUTUS */
+    #about-us .col:first-child{
+        width: 65%;
+    }
+
+    #about-us .col:last-child{
+        width: 35%;
+    }
+
 }
