@@ -25,6 +25,10 @@ img{
     min-height: 50px;
 }
 
+.box-content{
+    line-height: 80px;
+}
+
 /* 
 **********************
         LAYOUT
@@ -37,6 +41,25 @@ img{
     max-width: 100%;
     padding: 0 1rem;
 
+}
+
+.row{
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+
+.col{
+    padding: 1rem;
+}
+
+/* 
+**********************
+        SECTION
+**********************
+*/
+
+section{
+    padding: 80px 0;
 }
 
 /* 
@@ -63,4 +86,62 @@ img{
 
 .nav-list{
     display: flex;
+}
+
+/* 
+**********************
+        INTRO
+**********************
+*/
+
+#intro .card{
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    height: 100%;
+}
+
+/* 
+**********************
+      RESPONSIVE
+**********************
+*/
+
+/* ? Tablet */
+
+@media  screen and (min-width:576px) {
+
+    #intro .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #intro .col{
+        width: calc(100% / 3);
+    }
+
+    #intro .col:first-child {
+        width: calc(100% / 3 * 2);
+    }
+
+    #intro .col:first-child .card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #intro .card > .card-section{
+        width: 50%;
+    }
+}
+
+/* ? Desktop */
+
+@media  screen and (min-width:992px){
+    .container{
+        max-width: 1140px;
+    }
+
+    #intro .col:first-child .card{
+        flex-direction: row;
+    }
 }
