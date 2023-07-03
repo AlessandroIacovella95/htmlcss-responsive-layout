@@ -25,6 +25,10 @@ img{
     min-height: 50px;
 }
 
+.card-section{
+    line-height: 80px;
+}
+
 .box-content{
     line-height: 80px;
 }
@@ -59,7 +63,11 @@ img{
 */
 
 section{
-    padding: 80px 0;
+    padding: 50px 0;
+}
+
+section:nth-child(even){
+    background-color: #9792E4;
 }
 
 /* 
@@ -94,12 +102,27 @@ section{
 **********************
 */
 
+#intro{
+    padding-top: 80px;
+}
+
 #intro .card{
     background-color: red;
     color: white;
     padding: 1rem;
     height: 100%;
 }
+
+/* 
+**********************
+        Strategic
+**********************
+*/
+
+#strategic .col{
+   margin-bottom: 2rem;
+}
+
 
 /* 
 **********************
@@ -110,7 +133,7 @@ section{
 /* ? Tablet */
 
 @media  screen and (min-width:576px) {
-
+    /* INTRO */
     #intro .row{
         display: flex;
         flex-wrap: wrap;
@@ -132,11 +155,15 @@ section{
     #intro .card > .card-section{
         width: 50%;
     }
+
+    /* STRATEGIC */
+    
 }
 
 /* ? Desktop */
 
 @media  screen and (min-width:992px){
+    /* INTRO */
     .container{
         max-width: 1140px;
     }
@@ -144,4 +171,13 @@ section{
     #intro .col:first-child .card{
         flex-direction: row;
     }
-}
+
+    /* STRATEGIC */
+    #strategic .row{
+        display: flex;
+    }
+
+    #strategic .col{
+        width: 50%;
+        padding: 0 3rem;
+    }
