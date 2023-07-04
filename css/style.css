@@ -149,7 +149,10 @@ section:nth-child(even){
     margin-top: 15px;
 }
 
-#intro button{
+#intro a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
     border-radius: 50px;
     font-size: 1.1rem;
     padding: 5px 35px;
@@ -158,7 +161,7 @@ section:nth-child(even){
     color: white;
 }
 
- .card-section .phone{
+.card-section .phone{
     max-width: 60%;
     display: block;
 }
@@ -339,15 +342,13 @@ section:nth-child(even){
     margin-bottom: 15px;
 }
 
-#benefits button{
+#benefits a{
+    text-decoration: none;
+    display: inline-block;
     border-radius: 2rem;
     background-color: #9792E4;
     padding: 10px 50px;
     border: 1px solid transparent;
-}
-
-#benefits a{
-    text-decoration: none;
     color: white;
 }
 
@@ -401,18 +402,18 @@ section:nth-child(even){
     margin-bottom: 20px;
 }
 
-#about-us button{
-    white-space: nowrap;
-    font-size: .85rem;
-    border-radius: 2rem;
-    background-color: #9792E4;
-    padding: 10px 50px;
-    border: 1px solid transparent;
-}
-
 #about-us a{
     text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    white-space: nowrap;
+    padding: 15px 45px;
+    font-size: 1.2rem;
+    font-weight: 600;
     color: white;
+    background-color: #9792E4;
+    border-radius: 50px;
+    border: 1px solid transparent;
 }
 
 /* 
@@ -442,7 +443,10 @@ section:nth-child(even){
     font-size: 1.1rem;
 }
 
-#started button{
+#started .btn{
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 0;
     padding: 15px 45px;
     font-size: 1.2rem;
     font-weight: 600;
