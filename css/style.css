@@ -320,14 +320,46 @@ section:nth-child(even){
 #benefits  .title {
     text-align: center;
     line-height: 50px;
+    margin-bottom: 35px;
+    color: white;
+    font-size: 1.4rem;
 }
 
 #benefits .card{
-    background-color: red;
-    color: white;
+    border-radius: 2rem;
+    background-color:white;
+    color: #9792E4;
     padding: 1rem;
-    height: 100%;
     line-height: 30px;
+}
+
+#benefits .card div{
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#benefits h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 15px 0
+}
+
+#benefits p{
+    color: black;
+    margin-bottom: 15px;
+}
+
+#benefits button{
+    border-radius: 2rem;
+    background-color: #9792E4;
+    padding: 10px 50px;
+    border: 1px solid transparent;
+}
+
+#benefits a{
+    text-decoration: none;
+    color: white;
 }
 
 /* 
@@ -443,6 +475,34 @@ section:nth-child(even){
     }
 
     /* BENEFITS */
+    #benefits  .title {
+        font-size: 2rem;
+    }
+        
+    #benefits .card div{
+        margin-top: 20px;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    
+    #benefits h3{
+        font-size: 1.7rem;
+    }
+    
+    #benefits p{
+        margin-bottom: 30px;
+        font-size: 1.35rem;
+    }
+    
+    #benefits button{
+        margin-bottom: 15px;
+        font-size: 1.25rem;
+    }
+    
+    #benefits a{
+        text-decoration: none;
+        color: white;
+    }
 
     #benefits .col{
         width: calc(100% / 2);
@@ -495,7 +555,7 @@ section:nth-child(even){
 
     /* INTRO */
     .container{
-        max-width: 1000px;
+        max-width: 1200px;
     }
 
     body{
