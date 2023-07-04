@@ -407,8 +407,8 @@ section:nth-child(even){
     display: inline-block;
     margin-top: 15px;
     white-space: nowrap;
-    padding: 15px 45px;
-    font-size: 1.2rem;
+    padding: 15px 30px;
+    font-size: 1rem;
     font-weight: 600;
     color: white;
     background-color: #9792E4;
