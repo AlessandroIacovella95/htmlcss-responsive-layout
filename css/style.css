@@ -431,13 +431,53 @@ section:nth-child(even){
       STARTED
 **********************
 */
+#started span{
+    font-size: 1.35rem;
+    color:#D1D0F3;
+}
+
+#started h3{
+    color:white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#started h2{
+    color:#FDC15F;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#started p{
+    color:white;
+    font-size: 1.1rem;
+}
+
+#started button{
+    padding: 15px 45px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #9792E4;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid transparent;
+}
+
+#started .policy{
+    font-size: 0.85rem;
+    color: white;
+}
+
+#started .policy a{
+    color: white;
+}
 
 #started > .container{
     text-align: center;
 }
 
 #started .container > *{
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 /* 
@@ -592,6 +632,32 @@ section:nth-child(even){
     #started .container p{
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    #started span{
+        font-size: 1rem;
+    }
+    
+    #started h3{
+        font-size: 3rem;
+    }
+    
+    #started h2{
+        font-size: 5.5rem;
+    }
+    
+    #started p{
+        font-size: 1.2rem;
+        line-height: 30px;
+    }
+    
+    #started button{
+        padding: 25px 55px;
+        font-size: 1.5rem;
+    }
+    
+    #started .policy{
+        font-size: 0.95rem;
     }
 
     /* FOOTER */
