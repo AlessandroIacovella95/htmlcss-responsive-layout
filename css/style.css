@@ -10,6 +10,14 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img{
     max-width: 100%;
 }
@@ -119,19 +127,20 @@ section:nth-child(even){
     padding: 10px;
 }
 
+#header + *{
+    padding-top: 80px;
+}
+
 /* 
 **********************
         INTRO
 **********************
 */
 
-#intro{
-    padding-top: 90px;
-}
 
 #intro .card{
     background-color: #B5DDFF;
-    border-radius: 50px;
+    border-radius: 2rem;
     color: white;
     padding: 1rem 1rem 0 1rem;
     height: 100%;
@@ -184,7 +193,7 @@ section:nth-child(even){
 }
 
 .card .box-content:last-child{
-    padding: 30px 50px;
+    padding: 0px 50px 30px 50px;
     color: black;
 }
 
@@ -196,6 +205,52 @@ section:nth-child(even){
 
 #strategic .col{
    margin-bottom: 2rem;
+   text-align: left;
+   position: relative;
+}
+
+#strategic img{
+    text-align: center;
+}
+
+#strategic h2{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#strategic p{
+    color: white;
+    font-size: 1.1rem;
+    line-height: 28px;
+}
+
+#strategic .img-bg{
+    background-color: white;
+    border-radius: 2rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#strategic .img-bg p{
+    color: black;
+    padding: 0 30px 30px 30px;
+}
+
+#strategic .img-bg h2{
+    color: black;
+}
+
+#strategic .arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50px;
+    color: black;
+    background-color: #9792E4;
+    border-radius: 50px;
+    aspect-ratio: 1;
 }
 
 /* 
@@ -211,6 +266,14 @@ section:nth-child(even){
 
 #testimonial .card{
     margin: 25px 0;
+}
+
+#testimonial .immagine{
+    width:20%;
+    overflow: hidden;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    margin: 0 auto;
 }
 
 /* 
@@ -298,16 +361,6 @@ section:nth-child(even){
         width: calc(100% / 3 * 2);
     }
 
-    #intro .col:first-child .card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #intro .card > .card-section{
-        width: 50%;
-    }
-
     .box-content i{
         margin-top: 20px;
     }
@@ -329,18 +382,18 @@ section:nth-child(even){
         font-size: 1.5rem;
       }
     /* STRATEGIC */
+    #strategic h2{
+        font-size: 3.5rem;
+        margin-top: 65px;
+    }
 
     /* TESTIMONIAL */
     #testimonial .card{
         display: flex;
     }  
-    
-    #testimonial .immagine{
-        margin: 20px;
-    }
 
     #testimonial .info{
-        flex-direction: column;
+        flex-grow: 1;
         text-align: left;
     }
 
@@ -360,8 +413,12 @@ section:nth-child(even){
         display: flex;
     }
 
-    #about-us .col{
-        width: 50%;
+    #about-us .col:first-child{
+        width: 60%;
+    }
+
+    #about-us .col:last-child{
+        width: 40%;
     }
 
     /* STARTED */
@@ -371,9 +428,7 @@ section:nth-child(even){
     }
 
     /* FOOTER */
-    #footer .container {
-        max-width: 400px;
-    }
+    grandezza testo
 
 }
 
@@ -403,6 +458,7 @@ section:nth-child(even){
     }
 
     #intro .col:first-child .card{
+        display: flex;
         flex-direction: row;
         align-items: flex-start;
     }
@@ -417,23 +473,42 @@ section:nth-child(even){
         padding: 0 1rem;
     }
 
+    #strategic h2{
+        font-size: 2rem;
+    }
+
+    #strategic .col:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #strategic .col:first-child img {
+        margin-bottom: 80px;
+    }
+
+    #strategic .col:last-child{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #strategic .img-bg{
+        width: 350px;
+    }
+
     /* BENEFITS */
     #benefits .col{
         width: calc(100% / 3);
     }
 
-    #benefits .row{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     /* ABOUTUS */
     #about-us .col:first-child{
-        width: 65%;
+        width: calc(100% / 3 * 2);
     }
 
     #about-us .col:last-child{
-        width: 35%;
+        width: calc(100% / 3)
     }
 
     /* STARTED */
@@ -443,7 +518,5 @@ section:nth-child(even){
     }
 
     /* FOOTER */
-    #footer .container {
-        max-width: 450px;
-    }
+    grandezza testo
 }
