@@ -367,9 +367,63 @@ section:nth-child(even){
       ABOUT US
 **********************
 */
+#about-us .col{
+    position: relative;
+}
+
+#about-us .marks{
+    color: #9792E4;
+    font-size: 4rem;
+    position: absolute;
+    top: 35px;
+    left: 180px;
+}
+
+#about-us h2{
+    color: #9792E4;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#about-us p{
+    line-height: 35px;
+}
+
+#about-us .col:last-child p{
+    color: #9792E4;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#about-us .img-about{
+    width:200px;
+    overflow: hidden;
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+#about-us img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
  #about-us .col > *{
     margin-bottom: 20px;
+}
+
+#about-us button{
+    white-space: nowrap;
+    font-size: .85rem;
+    border-radius: 2rem;
+    background-color: #9792E4;
+    padding: 10px 50px;
+    border: 1px solid transparent;
+}
+
+#about-us a{
+    text-decoration: none;
+    color: white;
 }
 
 /* 
@@ -514,16 +568,24 @@ section:nth-child(even){
     }
     
     /* ABOUT US */
+    #about-us h2{
+        font-size: 3.5rem;
+    }
+
     #about-us .row{
         display: flex;
     }
 
     #about-us .col:first-child{
-        width: 60%;
+        width: 55%;
     }
 
     #about-us .col:last-child{
-        width: 40%;
+        width: 45%;
+    }
+
+    #about-us .col:last-child p{
+        line-height: 42px;
     }
 
     /* STARTED */
